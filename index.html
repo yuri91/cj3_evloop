@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SnapCode Web</title>
+    <style>
+      html, body { margin: 0; height: 100%; }
+    </style>
+    <script src="https://cjrtnc.leaningtech.com/3_20230809_162/cj3loader.js"></script>
+  </head>
+
+  <body></body>
+
+  <script src="natives.js"></script>
+  <script>
+
+      async function myInit() {
+        await cheerpjInit({natives: natives});
+        await cheerpjRunMain("Main", "/app/cj3_evloop/");
+      }
+      myInit();
+  </script>
+
+</html>
